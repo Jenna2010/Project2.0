@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css"
+</head>
+<body>
+<div class="container">
+   <header>
+        <h1 id="LindaBudek">Linda Budek</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="pages/Ohio.html">Ohio</a>
+          <a href="pages/Georgia.html">Georgia</a>
+          <a href="pages/California.html">California</a>
+        </nav>
+   </header>
+   
+        <h1>Home</h1>
+        <p>My family and I have seen a lot of the United States.  Most of our earlier trips were planned by where my husband traveled for business.  Now, they,re planned by where our children live.  In the past six years, we,ve seen California, Hawaii, and Nevada courtesy of our oldest son.  He's in the Navy.  Cleveland Has become one of our top tourist destinations since our oldest daughter moved there several years ago. 
+          This year, we have added Georgia to our list.  Our youngest son joined the Army and is stationed near Savannah. 
+          </p>
+   
+   
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+       <div class="numbertext">1 / 7</div>
+       <img src="images/San Diego1.jpg" alt="San Diego" class="center" style="width:70%">
+       <div class="text">San Diego</div>
+     </div>
+   
+     <div class="mySlides fade">
+       <div class="numbertext">2 / 7</div>
+       <img src="images/Hawaii1.jpg" alt="Hawaii" class="center" style="width:70%">
+       <div class="text">Hawaii</div>
+     </div>
+   
+     <div class="mySlides fade">
+       <div class="numbertext">3 / 7</div>
+       <img src="images/Las Vegas1.jpg" alt="Las Vegas" class="center" style="width:70%">
+       <div class="text">Las Vegas</div>
+     </div>
+
+     <div class="mySlides fade">
+      <div class="numbertext">4 / 7</div>
+      <img src="images/Reno1.jpg" alt="Reno" class="center" style="width:70%">
+      <div class="text">Reno</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 7</div>
+      <img src="images/Cleveland1.jpg" alt="Cleveland" class="center" style="width:70%">
+      <div class="text">Cleveland</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 7</div>
+      <img src="images/Ogeechee River1.jpg" alt="Ogeechee River" class="center" style="width:70%">
+      <div class="text">Ogeechee River, GA</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">7 / 7</div>
+      <img src="images/Cows1.jpg" alt="cows" class="center" style="width:70%">
+      <div class="text">Cows</div>
+    </div>
+   
+     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+   </div>
+   <br>
+   
+   <div style="text-align:center">
+     <span class="dot" onclick="currentSlide(1)"></span>
+     <span class="dot" onclick="currentSlide(2)"></span>
+     <span class="dot" onclick="currentSlide(3)"></span>
+     <span class="dot" onclick="currentSlide(4)"></span>
+     <span class="dot" onclick="currentSlide(5)"></span>
+     <span class="dot" onclick="currentSlide(6)"></span>
+     <span class="dot" onclick="currentSlide(7)"></span>
+   </div>
+   <script>
+   var slideIndex = 1;
+   showSlides(slideIndex);
+   
+   function plusSlides(n) {
+     showSlides(slideIndex += n);
+   }
+   
+   function currentSlide(n) {
+     showSlides(slideIndex = n);
+   }
+   
+   function showSlides(n) {
+     var i;
+     var slides = document.getElementsByClassName("mySlides");
+     var dots = document.getElementsByClassName("dot");
+     if (n > slides.length) {slideIndex = 1}
+     if (n < 1) {slideIndex = slides.length}
+     for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";
+     }
+     for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" active", "");
+     }
+     slides[slideIndex-1].style.display = "block";
+     dots[slideIndex-1].className += " active";
+   }
+   </script>
+
+  
+
+
+   <footer>
+        <p>&copy; Linda Budek</p>
+   </footer>
+
+  </div>
+
+
+
+  </body>
+</html>
