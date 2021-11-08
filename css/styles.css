@@ -95,6 +95,10 @@ figcaption{
     text-align: center;
 }
 
+ul{
+  list-style-type: circle;
+}
+
 
 /* classes*/
 
@@ -204,7 +208,7 @@ figcaption{
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color:var(--primary_dark)
+  color:var(--primary_dark);
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
